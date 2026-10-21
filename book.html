@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book appointment - City Clinic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-page="book">
+  <div id="nav"></div>
+  <div class="container auth-box" style="max-width:520px">
+    <div class="card">
+      <h1>Book an appointment</h1>
+      <div id="flash" style="display:none"></div>
+      <form id="bookForm">
+        <label for="doctor_id">Doctor</label>
+        <select id="doctor_id" name="doctor_id"></select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" min="09:00" max="18:00">
+
+        <label for="reason">Reason for visit</label>
+        <textarea id="reason" name="reason" rows="3"></textarea>
+
+        <button type="submit">Book appointment</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

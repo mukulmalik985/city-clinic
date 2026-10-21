@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - City Clinic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-page="admin">
+  <div id="nav"></div>
+  <div class="container">
+    <div id="flash" style="display:none"></div>
+
+    <div class="card">
+      <h2>All appointments</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Patient</th><th>Phone</th><th>Doctor</th><th>Date</th><th>Time</th><th>Reason</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody id="apptRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Manage doctors</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Name</th><th>Specialization</th><th>Fee</th><th>Action</th></tr></thead>
+          <tbody id="docRows"></tbody>
+        </table>
+      </div>
+
+      <h2 style="margin-top:24px">Add doctor</h2>
+      <form id="doctorForm">
+        <label for="dname">Name</label>
+        <input id="dname" name="name">
+        <label for="spec">Specialization</label>
+        <input id="spec" name="specialization">
+        <label for="fee">Fee (&#8377;)</label>
+        <input id="fee" name="fee" type="number" min="0">
+        <button type="submit">Add doctor</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

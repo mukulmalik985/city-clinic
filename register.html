@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - City Clinic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-page="register">
+  <div id="nav"></div>
+  <div class="container auth-box">
+    <div class="card">
+      <h1>Create account</h1>
+      <form id="registerForm">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name">
+        <div class="field-error" id="nameErr"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <div class="field-error" id="emailErr"></div>
+
+        <label for="phone">Mobile number</label>
+        <input type="text" id="phone" name="phone" maxlength="10">
+        <div class="field-error" id="phoneErr"></div>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <div class="field-error" id="passErr"></div>
+
+        <label for="confirm">Confirm password</label>
+        <input type="password" id="confirm">
+        <div class="field-error" id="confirmErr"></div>
+
+        <button type="submit">Create account</button>
+      </form>
+      <p>Already registered? <a href="index.html">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>
